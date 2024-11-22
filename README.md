@@ -1,7 +1,6 @@
 # sdd-database-desing
 Database Design
 
-# Untitled Diagram documentation
 ## Summary
 
 - [Introduction](#introduction)
