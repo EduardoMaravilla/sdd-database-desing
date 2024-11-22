@@ -10,7 +10,7 @@ Players often rely on unorganized notes or screenshots, making it challenging to
 
 ## Proposed Solution
 
-We propose developing a web application called [**NFS-Catalog**](https://sdd-catalog.netlify.app/home), which will allow users to:
+We propose developing a web application called [**SDD-Catalog**](https://sdd-catalog.netlify.app/home), which will allow users to:
 
 ### 1. Manage Vehicle Configurations  
 Users will be able to create, save, and update configurations for their vehicles, defining technical aspects like the engine, suspension, turbo, and more. These configurations will be accessible for consultation at any time.
@@ -40,7 +40,7 @@ Por lo general, los jugadores recurren a notas desorganizadas o capturas de pant
 
 ## Propuesta de Solución
 
-Se propone desarrollar una aplicación web llamada [**NFS-Catalog**](https://sdd-catalog.netlify.app/home), que permita a los usuarios:
+Se propone desarrollar una aplicación web llamada [**SDD-Catalog**](https://sdd-catalog.netlify.app/home), que permita a los usuarios:
 
 ### 1. Gestionar Configuraciones de Vehículos  
 Los usuarios podrán crear, guardar y actualizar configuraciones de sus vehículos, definiendo aspectos técnicos como motor, suspensión, turbo, entre otros. Estas configuraciones estarán disponibles para consulta en cualquier momento.
@@ -96,6 +96,36 @@ Proveer una herramienta práctica, accesible y segura que facilite la creación,
 
 ## Introduction
 
+The database for [**SDD-Catalog**](https://sdd-catalog.netlify.app/home) has been designed to efficiently address key aspects of the application, including security, vehicle configuration management, and user interaction. The design focuses on three main areas:
+
+1. **User Authentication and Management Security:**  
+   A robust system has been implemented to store and manage user information, ensuring that only authenticated users can access their configurations and data. Password security is handled through encryption techniques and token-based authentication, protecting sensitive data privacy.
+
+2. **Vehicle Configuration Storage:**  
+   The database allows storing personalized vehicle configurations, including attributes such as engine, suspension, turbo, and other key details for each vehicle. Each configuration is linked to a user, and can be saved, modified, or deleted as needed.
+
+3. **User and Admin Interaction:**  
+   In addition to storing configurations, the database supports user and admin interaction on the platform. This includes tracking messages sent by users and managing requests and inquiries.
+
+The database design is focused on scalability, allowing for the addition of more features and functionalities in the future without compromising performance or security.
+
+
+---
+
+La base de datos para [**SDD-Catalog**](https://sdd-catalog.netlify.app/home) ha sido diseñada para abordar de manera eficiente los aspectos clave de la aplicación, incluyendo la seguridad, la gestión de configuraciones de vehículos y la interacción entre los usuarios. El diseño se centra en tres áreas principales:
+
+1. **Seguridad en la Autenticación y Gestión de Usuarios:**  
+   Se ha implementado un sistema robusto para almacenar y gestionar la información de los usuarios, asegurando que solo los usuarios autenticados puedan acceder a sus configuraciones y datos. La seguridad de las contraseñas se maneja a través de técnicas de cifrado y autenticación de tokens, protegiendo la privacidad de los datos sensibles.
+
+2. **Almacenamiento de Configuraciones de Vehículos:**  
+   La base de datos permite almacenar configuraciones personalizadas de vehículos, que incluyen atributos como motor, suspensión, turbo, y otros detalles clave de cada vehículo. Cada configuración está asociada con un usuario y se puede guardar, modificar o eliminar según sea necesario.
+
+3. **Interacción entre Usuarios y Administración:**  
+   Además del almacenamiento de configuraciones, la base de datos soporta la interacción entre los usuarios y el administrador de la plataforma. Esto incluye el seguimiento de los mensajes enviados por los usuarios y la administración de solicitudes y consultas.
+
+El diseño de la base de datos se ha realizado con un enfoque de escalabilidad, permitiendo agregar más funcionalidades y características en el futuro sin comprometer el rendimiento ni la seguridad de la aplicación.
+
+
 ## Database type
 
 - **Database system:** MySQL
@@ -109,6 +139,61 @@ Proveer una herramienta práctica, accesible y segura que facilite la creación,
 | **module** | VARCHAR(50) | not null  |  | |
 | **base_path** | VARCHAR(50) | not null  |  | | 
 
+#### **Purpose**:
+The `modules` table is designed to store information about different application modules, each of which corresponds to a group of related endpoints. The table helps in organizing and structuring the API endpoints by associating each with a specific base path, making it easier to manage and maintain the routing of requests.
+
+#### **Fields**:
+- **id**: 
+  - **Type**: INTEGER 
+  - **Description**: A unique identifier for each module (Primary Key).
+  - **Constraints**: Not null, unique, auto-increment.
+  
+- **module**: 
+  - **Type**: VARCHAR(50)
+  - **Description**: The name of the module (e.g., `user`, `product`, `auth`).
+  - **Constraints**: Not null.
+  
+- **base_path**: 
+  - **Type**: VARCHAR(50)
+  - **Description**: The base path of the module, used as a prefix for all endpoints within that module (e.g., `/api/users`, `/api/products`).
+  - **Constraints**: Not null.
+
+#### **References**:
+- No external references (foreign keys) in this table.
+
+#### **Notes**:
+This table plays a crucial role in organizing the API by categorizing it into different modules. Each module corresponds to a specific functionality within the application, and the base path defines the route prefix for all the endpoints under that module. This design allows for easier scalability and management of API routes as the application grows.
+
+---
+
+### **Tabla modules**
+
+#### **Propósito**:
+La tabla `modules` está diseñada para almacenar información sobre los diferentes módulos de la aplicación, cada uno de los cuales corresponde a un grupo de endpoints relacionados. La tabla ayuda a organizar y estructurar los endpoints de la API, asociando cada uno con una ruta base específica, lo que facilita la gestión y el mantenimiento de las rutas de las solicitudes.
+
+#### **Campos**:
+- **id**: 
+  - **Tipo**: INTEGER 
+  - **Descripción**: Un identificador único para cada módulo (Clave primaria).
+  - **Restricciones**: No nulo, único, autoincrementable.
+  
+- **module**: 
+  - **Tipo**: VARCHAR(50)
+  - **Descripción**: El nombre del módulo (por ejemplo, `user`, `product`, `auth`).
+  - **Restricciones**: No nulo.
+  
+- **base_path**: 
+  - **Tipo**: VARCHAR(50)
+  - **Descripción**: La ruta base del módulo, utilizada como prefijo para todos los endpoints dentro de ese módulo (por ejemplo, `/api/users`, `/api/products`).
+  - **Restricciones**: No nulo.
+
+#### **Referencias**:
+- No hay referencias externas (claves foráneas) en esta tabla.
+
+#### **Notas**:
+Esta tabla desempeña un papel crucial en la organización de la API al categorizarla en diferentes módulos. Cada módulo corresponde a una funcionalidad específica dentro de la aplicación, y la ruta base define el prefijo de ruta para todos los endpoints bajo ese módulo. Este diseño permite una escalabilidad y gestión más fáciles de las rutas de la API a medida que la aplicación crece.
+
+---
 
 ### operations
 
