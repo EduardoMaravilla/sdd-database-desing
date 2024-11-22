@@ -1,5 +1,35 @@
 # sdd-database-desing
 
+## Project: SDD-Catalog
+
+Currently, video game enthusiasts, particularly players of [**Need for Speed Unbound**](https://www.ea.com/es-es/games/need-for-speed/need-for-speed-unbound), lack a centralized platform where they can create, save, and share personalized configurations for their vehicles. This includes specific features such as the engine, suspension, wheels, and other modifications that are part of their game strategies.
+
+Players often rely on unorganized notes or screenshots, making it challenging to manage and share ideas with other users.
+
+---
+
+## Proposed Solution
+
+We propose developing a web application called [**NFS-Catalog**](https://sdd-catalog.netlify.app/home), which will allow users to:
+
+### 1. Manage Vehicle Configurations  
+Users will be able to create, save, and update configurations for their vehicles, defining technical aspects like the engine, suspension, turbo, and more. These configurations will be accessible for consultation at any time.
+
+### 2. Explore Other Users' Configurations  
+A gallery will be available where users can browse and explore configurations shared by other players, fostering collaborative learning and inspiration.
+
+### 3. Authentication and Security  
+Users will have personal accounts secured with robust authentication to ensure only they can manage their configurations.
+
+### 4. User Interaction  
+The platform will include a feature to contact the administrator and eventually communicate with other users, fostering a collaborative community.
+
+---
+
+## Main Objective 
+
+Provide a practical, accessible, and secure tool that facilitates the creation, management, and collaboration among [**Need for Speed Unbound**](https://www.ea.com/es-es/games/need-for-speed/need-for-speed-unbound) players, enhancing the gaming experience and fostering an active community.
+
 ## Proyecto: SDD-Catalog
 
 Actualmente, los entusiastas de los videojuegos, en particular los jugadores de [**Need for Speed Unbound**](https://www.ea.com/es-es/games/need-for-speed/need-for-speed-unbound), carecen de una plataforma centralizada donde puedan crear, guardar, y compartir configuraciones personalizadas de sus vehículos. Esto incluye características específicas como el motor, la suspensión, las ruedas, y otras modificaciones que forman parte de sus estrategias de juego.
@@ -31,36 +61,6 @@ La plataforma incluirá una función para contactar al administrador y eventualm
 Proveer una herramienta práctica, accesible y segura que facilite la creación, gestión y colaboración entre jugadores de [**Need for Speed Unbound**](https://www.ea.com/es-es/games/need-for-speed/need-for-speed-unbound), mejorando la experiencia del juego y fomentando una comunidad activa.
 
 ---
-
-## Project: SDD-Catalog
-
-Currently, video game enthusiasts, particularly players of [**Need for Speed Unbound**](https://www.ea.com/es-es/games/need-for-speed/need-for-speed-unbound), lack a centralized platform where they can create, save, and share personalized configurations for their vehicles. This includes specific features such as the engine, suspension, wheels, and other modifications that are part of their game strategies.
-
-Players often rely on unorganized notes or screenshots, making it challenging to manage and share ideas with other users.
-
----
-
-## Proposed Solution
-
-We propose developing a web application called [**NFS-Catalog**](https://sdd-catalog.netlify.app/home), which will allow users to:
-
-### 1. Manage Vehicle Configurations  
-Users will be able to create, save, and update configurations for their vehicles, defining technical aspects like the engine, suspension, turbo, and more. These configurations will be accessible for consultation at any time.
-
-### 2. Explore Other Users' Configurations  
-A gallery will be available where users can browse and explore configurations shared by other players, fostering collaborative learning and inspiration.
-
-### 3. Authentication and Security  
-Users will have personal accounts secured with robust authentication to ensure only they can manage their configurations.
-
-### 4. User Interaction  
-The platform will include a feature to contact the administrator and eventually communicate with other users, fostering a collaborative community.
-
----
-
-## Main Objective 
-
-Provide a practical, accessible, and secure tool that facilitates the creation, management, and collaboration among [**Need for Speed Unbound**](https://www.ea.com/es-es/games/need-for-speed/need-for-speed-unbound) players, enhancing the gaming experience and fostering an active community.
 
 
 ## Summary
