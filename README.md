@@ -128,7 +128,7 @@ El diseño de la base de datos se ha realizado con un enfoque de escalabilidad, 
 
 ## Database type
 
-- **Database system:** MySQL
+- **Database system:** PostgreSQL
 ## Table structure
 
 ### modules
@@ -2212,5 +2212,6 @@ erDiagram
         INTEGER user_car_config_id
     }
 ```
-![design-sdd-database](sdd-catalog1.png)
-![design-sdd-database](sdd-catalog2.png)
+![design-sdd-database1](sdd-catalog1.png)
+![design-sdd-database2](sdd-catalog2.png)
+![design-sdd-database3](app_performance.png)
