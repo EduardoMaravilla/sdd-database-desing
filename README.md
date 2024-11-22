@@ -2214,4 +2214,4 @@ erDiagram
 ```
 ![design-sdd-database1](sdd-catalog1.png)
 ![design-sdd-database2](sdd-catalog2.png)
-![design-sdd-database3](app_performance.png)
+![design-sdd-database3](app_performance.jpg)
