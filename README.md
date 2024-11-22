@@ -1,5 +1,67 @@
 # sdd-database-desing
-Database Design
+
+## Proyecto: SDD-Catalog
+
+Actualmente, los entusiastas de los videojuegos, en particular los jugadores de [**Need for Speed Unbound**](https://www.ea.com/es-es/games/need-for-speed/need-for-speed-unbound), carecen de una plataforma centralizada donde puedan crear, guardar, y compartir configuraciones personalizadas de sus vehículos. Esto incluye características específicas como el motor, la suspensión, las ruedas, y otras modificaciones que forman parte de sus estrategias de juego.
+
+Por lo general, los jugadores recurren a notas desorganizadas o capturas de pantalla, lo que dificulta la gestión y el intercambio de ideas con otros usuarios.
+
+---
+
+## Propuesta de Solución
+
+Se propone desarrollar una aplicación web llamada [**NFS-Catalog**](https://sdd-catalog.netlify.app/home), que permita a los usuarios:
+
+### 1. Gestionar Configuraciones de Vehículos  
+Los usuarios podrán crear, guardar y actualizar configuraciones de sus vehículos, definiendo aspectos técnicos como motor, suspensión, turbo, entre otros. Estas configuraciones estarán disponibles para consulta en cualquier momento.
+
+### 2. Explorar Configuraciones de Otros Usuarios  
+Se habilitará una galería donde los usuarios podrán navegar y explorar las configuraciones compartidas por otros jugadores, fomentando el aprendizaje colaborativo y la inspiración.
+
+### 3. Autenticación y Seguridad  
+Los usuarios tendrán cuentas personales protegidas por autenticación segura para garantizar que solo ellos puedan gestionar sus configuraciones.
+
+### 4. Interacción entre Usuarios  
+La plataforma incluirá una función para contactar al administrador y eventualmente comunicarse con otros usuarios, creando una comunidad colaborativa.
+
+---
+
+## Objetivo Principal
+
+Proveer una herramienta práctica, accesible y segura que facilite la creación, gestión y colaboración entre jugadores de [**Need for Speed Unbound**](https://www.ea.com/es-es/games/need-for-speed/need-for-speed-unbound), mejorando la experiencia del juego y fomentando una comunidad activa.
+
+---
+
+## Project: SDD-Catalog
+
+Currently, video game enthusiasts, particularly players of [**Need for Speed Unbound**](https://www.ea.com/es-es/games/need-for-speed/need-for-speed-unbound), lack a centralized platform where they can create, save, and share personalized configurations for their vehicles. This includes specific features such as the engine, suspension, wheels, and other modifications that are part of their game strategies.
+
+Players often rely on unorganized notes or screenshots, making it challenging to manage and share ideas with other users.
+
+---
+
+## Proposed Solution
+
+We propose developing a web application called [**NFS-Catalog**](https://sdd-catalog.netlify.app/home), which will allow users to:
+
+### 1. Manage Vehicle Configurations  
+Users will be able to create, save, and update configurations for their vehicles, defining technical aspects like the engine, suspension, turbo, and more. These configurations will be accessible for consultation at any time.
+
+### 2. Explore Other Users' Configurations  
+A gallery will be available where users can browse and explore configurations shared by other players, fostering collaborative learning and inspiration.
+
+### 3. Authentication and Security  
+Users will have personal accounts secured with robust authentication to ensure only they can manage their configurations.
+
+### 4. User Interaction  
+The platform will include a feature to contact the administrator and eventually communicate with other users, fostering a collaborative community.
+
+---
+
+## Main Objective 
+
+Provide a practical, accessible, and secure tool that facilitates the creation, management, and collaboration among [**Need for Speed Unbound**](https://www.ea.com/es-es/games/need-for-speed/need-for-speed-unbound) players, enhancing the gaming experience and fostering an active community.
+
 
 ## Summary
 
@@ -538,3 +600,5 @@ erDiagram
         INTEGER user_car_config_id
     }
 ```
+![design-sdd-database](sdd-catalog1.png)
+![design-sdd-database](sdd-catalog2.png)
