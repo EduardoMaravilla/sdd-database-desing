@@ -1,4 +1,4 @@
-# sdd-database-desing
+# sdd-database-design
 
 ## Proyecto: SDD-Catalog
 
